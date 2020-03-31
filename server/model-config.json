@@ -38,5 +38,9 @@
   "appUser": {
     "dataSource": "mongo",
     "public": true
+  },
+  "favorite": {
+    "dataSource": "mongo",
+    "public": true
   }
 }

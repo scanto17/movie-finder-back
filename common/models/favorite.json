@@ -1,0 +1,26 @@
+{
+  "name": "favorite",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "movieTitle": {
+      "type": "string",
+      "required": true
+    },
+    "thirdPartyMovieId": {
+      "type": "string",
+      "required": true
+    },
+    "movieGenre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

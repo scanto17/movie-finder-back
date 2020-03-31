@@ -20,7 +20,20 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "favorites": {
+      "type": "hasMany",
+      "model": "favorite",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
